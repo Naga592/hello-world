@@ -54,7 +54,7 @@
     </style>
 </head>
 <body>
-    <div class="greeting">Hello, Google! Have a Good Day!</div>
+    <div class="greeting">Hello, Google!</div>
     <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
     <input type="text" class="search-bar" placeholder="Search Google or type a URL">
     <div class="search-buttons">
