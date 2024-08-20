@@ -3,60 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login</title>
+    <title>Google</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background-color: #f2f2f2;
             margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        .login-container {
-            width: 300px;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .login-container h1 {
-            text-align: center;
-            color: #1877f2;
+        .logo {
             margin-bottom: 20px;
         }
-        .login-container input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #dddfe2;
-            border-radius: 6px;
+        .greeting {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
         }
-        .login-container button {
-            width: 100%;
+        .search-bar {
+            width: 50%;
+            max-width: 500px;
             padding: 10px;
-            background-color: #1877f2;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
             font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+            outline: none;
         }
-        .login-container button:hover {
-            background-color: #165db2;
+        .search-buttons {
+            margin-top: 20px;
+        }
+        .search-buttons input {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #5f6368;
+            font-size: 14px;
+            margin: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .search-buttons input:hover {
+            border: 1px solid #dadce0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Facebook</h1>
-        <form action="#">
-            <input type="text" placeholder="Email or Phone Number" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-        </form>
+    <div class="greeting">Hello, Naga!</div>
+    <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+    <input type="text" class="search-bar" placeholder="Search Google or type a URL">
+    <div class="search-buttons">
+        <input type="button" value="Google Search">
+        <input type="button" value="I'm Feeling Lucky">
     </div>
 </body>
 </html>
-  
+
